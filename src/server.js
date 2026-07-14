@@ -9,14 +9,19 @@ const __dirname = path.dirname(__filename);
 const PORT = 3000;
 
 const server = http.createServer((req, res) => {
-    const filePath = path.join(__dirname, '../public', 'index.html');
+    let fileName = req.url === '/' ? 'index.html' : req.url;
+
+    const filePath = path.join(__dirname, '../public', fileName);
 
     fs.readFile(filePath, (err, content) => {
         if (err) {
             res.writeHead(500, { 'Content-Type': 'text/plain' });
             res.end('File did not load.');
         } else {
-            res.writeHead(200, { 'Content-Type': 'text/html' });
+            const ext = path.extname(filePath);
+            const contentType = ext === '.css' ? 'text/css' : 'text/html';
+            
+            res.writeHead(200, { 'Content-Type': contentType });
             res.end(content, 'utf-8');
         }
     });

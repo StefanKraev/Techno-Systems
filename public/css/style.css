@@ -1,0 +1,98 @@
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #95a5a6;
+    margin: 0;
+    min-height: 100vh;
+    font-family: "Carlito", sans-serif;
+    font-weight: 400;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2c3e50;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.navbar {
+    color: #ffffff;
+}
+
+.links {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+}
+
+.links a {
+    font-family: "Carlito", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5rem;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    color: #2c3e50;
+}
+
+.main {
+    font-size: 1.5rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.services {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.register {
+    border: 0.1rem solid black;
+    border-radius: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    background-color: #ced8d9;
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+
+.maintenance {
+    border: 0.1rem solid black;
+    border-radius: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    background-color: #ced8d9;
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+
+.shop {
+    border: 0.1rem solid black;
+    border-radius: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    background-color: #ced8d9;
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+
+.contacts h3 {
+    margin-left: 2rem;
+}
+
+footer {
+    background-color: #2c3e50;
+    color: white;
+}
